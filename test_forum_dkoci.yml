@@ -1,6 +1,6 @@
 ---
 # https://forum.ansible.com/t/roles-in-collection-and-awx/2147/5
-- name: Test forum @dkoci
+- name: Test Ansible forum - user @dkoci
   hosts: localhost
   gather_facts: false
   roles:
