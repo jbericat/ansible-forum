@@ -1,10 +1,11 @@
 ---
-- name: Program setup
+# https://forum.ansible.com/t/roles-in-collection-and-awx/2147/5
+- name: Test forum @dkoci
   hosts: localhost
-  gather_facts: true
+  gather_facts: false
   roles:
-    - role: mynamespace.mycollection.my_role
+    - mynamespace.mycollection.my_role
 
   tasks:
 
-
+...
