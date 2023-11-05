@@ -1,0 +1,10 @@
+---
+- name: Program setup
+  hosts: localhost
+  gather_facts: true
+  roles:
+    - mynamespace.mycollection.my_role
+
+  tasks:
+
+

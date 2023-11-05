@@ -1,0 +1,31 @@
+---
+- name: Program setup
+  hosts: localhost
+  gather_facts: true
+  vars:
+    chosen_encryption: "D"
+
+  tasks:
+
+    - name: Encoded random password (32 key length)
+      ansible.builtin.set_fact:
+        password32: "{{ lookup('community.general.random_string', base64=true, length=32) }}"
+      when: >-
+        chosen_encryption == "A" or
+        chosen_encryption == "B" or
+        chosen_encryption == "C"
+      no_log: true
+
+    - name: Encoded random password (16 key length)
+      ansible.builtin.set_fact:
+        password16: "{{ lookup('community.general.random_string', base64=true, length=16) }}"
+      when: >-
+        chosen_encryption == "D" or
+        chosen_encryption == "E"
+      no_log: true
+
+    - name: DEBUG
+      ansible.builtin.debug:
+        msg:
+          - "password16 is {{ password16 | default('null') }}"
+          - "password32 is {{ password32 | default('null') }}"
