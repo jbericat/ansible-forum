@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: true
   roles:
-    - mynamespace.mycollection.my_role
+    - role: mynamespace.mycollection.my_role
 
   tasks:
 
