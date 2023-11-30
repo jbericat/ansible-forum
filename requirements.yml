@@ -1,0 +1,6 @@
+---
+collections:
+  - name: git@github.com:devroles/ansible_collection_system.git
+    type: git
+    version: 3.0.0
+...
