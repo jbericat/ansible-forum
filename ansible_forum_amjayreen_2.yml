@@ -22,7 +22,7 @@
 
         - name: Task 2.2 - Delete previous succeded node
           awx.awx.workflow_job_template_node:
-            identifier: job_1
+            identifier: JOB_1
             state: absent
             controller_username: admin
             controller_password: "?=>}4+@h!DrG:^Bi"
