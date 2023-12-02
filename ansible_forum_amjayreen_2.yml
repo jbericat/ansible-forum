@@ -16,6 +16,10 @@
           register: pb2_results
           ignore_errors: true
 
+        - name: DEBUG
+          ansible.builtin.debug:
+            var: pb2_results
+
     - name: Task 2.2 - Delete succeded node
       awx.awx.workflow_job_template_node:
         identifier: job_2
