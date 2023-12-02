@@ -1,0 +1,14 @@
+---
+- name: 1.1 - Debug message
+  ansible.builtin.debug:
+    msg: >-
+      file_1.txt counter has initial value: {{ lookup('file', 'file_1.txt') | int }} value
+
+- name: 1.2 - Update file_1.txt counter value from jinja template
+  ansible.builtin.template:
+    src: decrease_counter.j2
+    dest: roles/amjayreen/files/file_1.txt
+    mode: "0755"
+  until: "{{ lookup('file', 'file_1.txt') | int == 0 }}"
+  retries: 2
+...

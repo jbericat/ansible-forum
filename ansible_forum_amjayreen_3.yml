@@ -1,0 +1,12 @@
+---
+- name: amjayreen playbook 3
+  hosts: localhost
+  gather_facts: false
+  role: 
+    - amjayreen
+  tasks:
+
+    - name: DEBUG
+      ansible.builtin.debug:
+        msg: "This is Playbook 3"
+...
