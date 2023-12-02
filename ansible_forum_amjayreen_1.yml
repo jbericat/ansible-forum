@@ -1,0 +1,34 @@
+---
+- name: Amjayreen playbook 1
+  hosts: localhost
+  gather_facts: false
+  vars:
+    pb1_counter: 0
+  tasks:
+
+    - name: Playbook core task/s Block
+      block:
+
+        - name: Task 1.1 - Core task 1
+          ansible.builtin.debug:
+            msg: "This is Task 1 from Playbook 1"
+          failed_when: pb1_counter != 0
+          register: pb1_results
+          ignore_errors: true
+
+    # - name: Task 1.2 - Delete succeded node
+    #   awx.awx.workflow_job_template_node:
+    #     identifier: job_1
+    #     state: absent
+    #     controller_username: admin
+    #     controller_password: "?=>}4+@h!DrG:^Bi"
+    #     controller_host: awx.dev.cgr-lab.lan
+    #     validate_certs: false
+    #     workflow_job_template: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
+    #   when: not pb1_results.failed
+
+    # - name: Task 1.3 - Assert if playbook 1 failed
+    #   ansible.builtin.fail:
+    #     msg: Playbook 1 failed!
+    #   when: pb1_results.failed
+...

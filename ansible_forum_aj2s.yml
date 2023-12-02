@@ -1,0 +1,13 @@
+# https://paullockaby.com/posts/2022/01/managing-kubernetes-secrets-with-ansible/
+
+---
+- name: Store Bearer on K8's secrets storage
+  hosts: all
+  gather_facts: false
+  tasks:
+
+  - name: Check for kubectl
+    ansible.builtin.stat:
+      path: /usr/local/bin/kubectl
+    register: kubectl
+...

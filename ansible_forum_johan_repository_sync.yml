@@ -1,0 +1,18 @@
+---
+- name: Updating Automation remote collection repository (Community)
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+  # Define following vars here, or in ah_configs/ah_auth.yml
+    ah_host: https://galaxy.dev.cgr-lab.lan
+    ah_username: admin
+    ah_password: "WrdfGsdfgs4567"
+    ah_request_timeout: 30
+    ah_path_prefix: galaxy
+    ah_validate_certs: false
+    ah_repositories:
+      - name: community
+  roles:
+    - infra.ah_configuration.repository_sync
+...

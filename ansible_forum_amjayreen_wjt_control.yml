@@ -1,0 +1,19 @@
+---
+- name: Amjayreen playbook 1
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Workflow Job Template Control
+      ansible.builtin.debug:
+        msg: "This Playbook rebuilds and relaunch the Workflow Job Template"
+
+    - name: Delete succeded nodes
+
+    - name: Replay WJT
+      awx.awx.workflow_launch:
+        name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
+        controller_username: admin
+        controller_password: "?=>}4+@h!DrG:^Bi"
+        validate_certs: false
+...

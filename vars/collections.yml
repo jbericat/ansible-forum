@@ -1,0 +1,7 @@
+---
+ah_repository_community:
+  url: https://galaxy.ansible.com/api/
+  requirements:
+    - name: community.general
+      version: "6.6.6"
+  token: "34b66ff26a9413184fedd4c6bcbbfd6c39f06986"

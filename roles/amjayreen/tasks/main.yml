@@ -1,0 +1,5 @@
+---
+- name: Create initial WJT
+
+    file: playbook_1.yml
+...

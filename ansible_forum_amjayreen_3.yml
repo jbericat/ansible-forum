@@ -1,0 +1,15 @@
+---
+- name: Amjayreen playbook 3
+  hosts: localhost
+  gather_facts: false
+  vars:
+    pb3_counter: 1
+  tasks:
+
+    # This one will never run since on this POC project I'm not updating the counter on the file
+
+    - name: DEBUG
+      ansible.builtin.debug:
+        msg: "This is Playbook 3"
+      failed_when: pb3_counter != 0
+...

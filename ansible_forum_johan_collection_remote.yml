@@ -1,0 +1,29 @@
+---
+- name: Updating Automation remote collection repository (Community)
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+  # Define following vars here, or in ah_configs/ah_auth.yml
+    ah_host: https://galaxy.dev.cgr-lab.lan
+    ah_username: admin
+    ah_password: WrdfGsdfgs4567
+    ah_request_timeout: 30
+    ah_path_prefix: galaxy
+    ah_collection_remotes:
+      - name: community
+        url: https://galaxy.ansible.com/api/
+        requirements:
+          - name: community.general
+            version: 8.0.1
+        token: "34b66ff26a9413184fedd4c6bcbbfd6c39f06986"
+        status: absent
+    ah_validate_certs: false
+    ah_repositories:
+      - name: community
+  tags:
+    - always
+  roles:
+    - infra.ah_configuration.collection_remote
+    - infra.ah_configuration.repository_sync
+...
