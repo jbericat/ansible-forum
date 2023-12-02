@@ -1,13 +1,5 @@
 ---
-- name: Include pb_1 tasks
+- name: Create initial WJT
   ansible.builtin.import_tasks:
     file: playbook_1.yml
-
-- name: Include pb_2 tasks
-  ansible.builtin.include_tasks:
-    file: playbook_2.yml
-
-- name: Include pb_3 tasks
-  ansible.builtin.include_tasks:
-    file: playbook_3.yml
 ...

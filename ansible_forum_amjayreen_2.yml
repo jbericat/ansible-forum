@@ -1,9 +1,9 @@
 ---
-- name: amjayreen playbook 2
+- name: Amjayreen playbook 2
   hosts: localhost
   gather_facts: false
-  role: 
-    - amjayreen
+  # roles:
+  #   - amjayreen
   tasks:
 
     - name: DEBUG
