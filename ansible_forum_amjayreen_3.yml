@@ -6,12 +6,10 @@
     pb3_counter: 1
   tasks:
 
+    # This one will never run since on this POC project I'm not updating the counter on the file
+
     - name: DEBUG
       ansible.builtin.debug:
         msg: "This is Playbook 3"
       failed_when: pb3_counter != 0
-
-    - name: UPDATE COUNTER
-      ansible.builtin.set_fact:
-        pb2_counter: 0
 ...

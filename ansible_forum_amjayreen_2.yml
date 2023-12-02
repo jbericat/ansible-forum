@@ -6,12 +6,31 @@
     pb2_counter: 1
   tasks:
 
-    - name: DEBUG
-      ansible.builtin.debug:
-        msg: "This is Playbook 2"
-      failed_when: pb2_counter != 0
+    - name: Playbook core task/s Block
+      block:
 
-    - name: UPDATE COUNTER
-      ansible.builtin.set_fact:
-        pb2_counter: 0
+        - name: Task 2.1 - Core task 1
+          ansible.builtin.debug:
+            msg: "This is Task 1 from Playbook 2"
+          failed_when: pb2_counter != 0
+          register: pb2_results
+          ignore_errors: true
+
+    - name: Task 2.2 - Delete succeded node
+      awx.awx.workflow_job_template_node:
+        identifier: job_2
+        state: absent
+        name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
+        controller_username: admin
+        controller_password: "?=>}4+@h!DrG:^Bi"
+        validate_certs: false
+      when: not pb2_results.failed
+
+    - name: Task 2.3 - Replay WJT
+      awx.awx.workflow_launch:
+        name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
+        controller_username: admin
+        controller_password: "?=>}4+@h!DrG:^Bi"
+        validate_certs: false
+        when: pb2_results.failed
 ...
