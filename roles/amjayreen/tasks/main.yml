@@ -1,5 +1,5 @@
 ---
 - name: Create initial WJT
-  ansible.builtin.import_tasks:
+
     file: playbook_1.yml
 ...

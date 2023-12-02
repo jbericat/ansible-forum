@@ -17,7 +17,7 @@
           failure_nodes: []
           always_nodes: []
           credentials: []
-      - identifier: node202
+      - identifier: job_2
         unified_job_template:
           organization:
             name: Default
