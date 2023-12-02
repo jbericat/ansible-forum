@@ -22,6 +22,7 @@
         state: absent
         controller_username: admin
         controller_password: "?=>}4+@h!DrG:^Bi"
+        controller_host: awx.dev.cgr-lab.lan
         validate_certs: false
         workflow_job_template: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
       when: not pb1_results.failed

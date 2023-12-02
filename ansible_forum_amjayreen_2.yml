@@ -23,6 +23,7 @@
         name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
         controller_username: admin
         controller_password: "?=>}4+@h!DrG:^Bi"
+        controller_host: awx.dev.cgr-lab.lan
         validate_certs: false
       when: not pb2_results.failed
 
@@ -31,6 +32,12 @@
         name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
         controller_username: admin
         controller_password: "?=>}4+@h!DrG:^Bi"
+        controller_host: awx.dev.cgr-lab.lan
         validate_certs: false
         when: pb2_results.failed
+
+    - name: Task 2.4 - Stop WJT exec when JT Fails
+      ansible.builtin.fail:
+        msg: File value is not 0!
+      when: pb2_results.failed
 ...
