@@ -22,7 +22,7 @@
 
         - name: Task 2.2 - Delete previous succeded node
           awx.awx.workflow_job_template_node:
-            identifier: job_2
+            identifier: job_1
             state: absent
             name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
             controller_username: admin
