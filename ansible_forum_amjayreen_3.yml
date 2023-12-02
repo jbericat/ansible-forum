@@ -2,9 +2,16 @@
 - name: Amjayreen playbook 3
   hosts: localhost
   gather_facts: false
+  vars:
+    pb3_counter: 1
   tasks:
 
     - name: DEBUG
       ansible.builtin.debug:
         msg: "This is Playbook 3"
+      failed_when: pb3_counter != 0
+
+    - name: UPDATE COUNTER
+      ansible.builtin.set_fact:
+        pb2_counter: 0
 ...

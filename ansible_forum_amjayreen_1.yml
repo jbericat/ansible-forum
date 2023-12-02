@@ -2,9 +2,12 @@
 - name: Amjayreen playbook 1
   hosts: localhost
   gather_facts: false
+  vars:
+    pb1_counter: 0
   tasks:
 
     - name: DEBUG
       ansible.builtin.debug:
         msg: "This is Playbook 1"
+      failed_when: pb1_counter != 0
 ...
