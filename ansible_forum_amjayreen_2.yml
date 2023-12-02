@@ -16,24 +16,20 @@
           register: pb2_results
           ignore_errors: true
 
-        - name: DEBUG
-          ansible.builtin.debug:
-            var: pb2_results
-
-    - name: Task 2.2 - Delete succeded node
-      awx.awx.workflow_job_template_node:
-        identifier: job_2
-        state: absent
-        name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
-        controller_username: admin
-        controller_password: "?=>}4+@h!DrG:^Bi"
-        controller_host: awx.dev.cgr-lab.lan
-        validate_certs: false
-      when: not pb2_results.failed
-
     - name: If failed, then...
       when: pb2_results.failed
       block:
+
+        - name: Task 2.2 - Delete previous succeded node
+          awx.awx.workflow_job_template_node:
+            identifier: job_2
+            state: absent
+            name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
+            controller_username: admin
+            controller_password: "?=>}4+@h!DrG:^Bi"
+            controller_host: awx.dev.cgr-lab.lan
+            validate_certs: false
+          # when: not pb1_results.failed
 
         - name: Task 2.3 - Replay WJT
           awx.awx.workflow_launch:
@@ -42,7 +38,6 @@
             controller_password: "?=>}4+@h!DrG:^Bi"
             controller_host: awx.dev.cgr-lab.lan
             validate_certs: false
-
 
         - name: Task 2.4 - Stop WJT exec when JT Fails
           ansible.builtin.fail:
