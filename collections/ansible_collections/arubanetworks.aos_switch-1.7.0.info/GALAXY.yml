@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/arubanetworks-aos_switch-1.7.0.tar.gz
+format_version: 1.0.0
+name: aos_switch
+namespace: arubanetworks
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 1.7.0
+version_url: /api/v3/plugin/ansible/content/published/collections/index/arubanetworks/aos_switch/versions/1.7.0/

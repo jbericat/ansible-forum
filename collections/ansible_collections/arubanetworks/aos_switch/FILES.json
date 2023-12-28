@@ -1,0 +1,523 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "CONTRIBUTING.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c39dd91e6d6ef9f0c70a0eec20496f4ca9d96bef9788f3316c28bce7339139cd",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c0c5bff307efbf32ec024c96457afcc7b8dbc537bc4fdf7ab7e70328815165b",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/arubaoss.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b91181677d041c17218ebd988ce11f71dcfd14a7a46d34f9913d691467a749dd",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/arubaoss.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0606517ac3f30b4ec2fb4dcbdb65e8900ea0351232a2680bbded1c46ebf58afe",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1dc1dc27add241fa68be1dfdd87b29be3fbf34134f41e3e6efd71399dba9049f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/acls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de9c36e24915c9d81d9117ddc0b1570037342c9141667c2fea651e7464522d0d",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/lacp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d6f38ab223a069041aefb73599c426ddbed74b4b4eb5eaf98a352e93e9664b27",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/loop_protect_ports.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdfa6eff31ea92a56cce603f49d5e69797a4fef4a9540699b47bed097d12cab9",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/vlans_ports.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c8e263d14635f9013461603756f4e95604d2eade7a98d22359d9bedee213c41",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/loop_protect_status.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1201a29070ac76a0ddf1ca674ecb17ac75689b502be81623636dfe297f701405",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a22aaccbf79a5ee43d06f047084773b364739d1ecc652e3ec3a799e1cafcba64",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/loop_protect_vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e5f0dac30c5c9f247f8335615acc693de09bc5f40b5ccb94911869fc526e96f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/lldp_neighbors.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b925997693cd4f009e6bb8973370af622c83fe337bb08c2ecbd49db2fabc6af",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/legacy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bca2821122f72f9e01f1266a754a90e8ef7bc9ab3cce3728465d7d2545d1cb42",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/facts/facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c1614fd3b6fb355b749e1b8ad06ccc5d88e89afe5914a1bb2a7220af1bc8e831",
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal/arubaoss.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ba9f89eae5db03e27b664a98db5f39bdee454c0fa9985fdc31f2830a10070767",
+   "format": 1
+  },
+  {
+   "name": "plugins/cliconf",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/cliconf/arubaoss.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d6d9e7fc807c565039c226a121992a7db9fe80c306a7d045276a7771da2cf1b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_qos_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5047c547f07ef3d57c099b2d09a135f95df77c32f8a66e0eff608c14781dfde4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_ip_auth.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c2e3b372d4a6b2be4d6c0e50c53240a4bc2647f2d5cbef194c20bc006cb540aa",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_reboot.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ff158f018679017d31e04d218097024006a60ddd5ab573aeed4ec65a7be7bd2f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_ntp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68dc3d7676118ead32351391415c2abc9b29d64cb755e0a78c0e0bdc4caf0c2d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_tacacs_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e6ae72354c26c8629d3fe0601bc1b79a1b10a16fa9d2750c1066d8b834459fab",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_aaa_accounting.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "69dfb6d9f7b1c986772171acb2a26140f96640c75ddb8ba92a5905f2b43ec8af",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "06df6b9ac4cc3005955f428eff35385322784812c1a07fc0042cdbd4ba31a22e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7998934f8fccb91930dbc202c642dd9c25219f75f426f17335679683ab4b7b59",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_snmp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ceb7630765b5af61ea0fd2075fcbca67a2e4cf3610587111856ae4b2826635a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2dbb9f5d85f3e5dbc754431c88868d549c1ac5c33968cc4e3affcc55b550ef1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_routing.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d978640541a04b3859eef555ec8f28cb219f865b09554ba343898d9fa6627177",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf067659de5a9f16ccec924ca6f5d55edaf6f0e9a318bc2589c7ee511c2112d2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_dns.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b786fdbe6d354f1a9f5dc186d184d3b03a7808f67fce3ef69d17b4d173680942",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_loop_protect.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac3bd38d1fff07ed93e42d9ebbf10725ae442a336c9d0ec23697192cf932e0e8",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_radius_profile.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6084b4db0e4ea933de3be14e21346af906e9ed6a636d33a7518ca288f04ac5dd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_dsnoop.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f0859299d5f8f5bbeea55481bde40fbbc301ce0ae8f4d027cd45979b643edf5a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_sntp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e4ea9c916c25577ec462e0f1f73eb032d48d1f75ecc081c7d7137f9e6eb167d4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_stp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27fdaa933a920d4c2663d988ceb126fdae0992b5ff8b3421935ab84d2bf65227",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_poe.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f54ed6bbbe4a11178c952a5e5e19aca17534f09f25d59d185b6a25313d5eaa0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_lacp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4655ff6296a65b136ec737624a66730df91f28fee0ff3ab4f6cab9d67e321210",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_vlan.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "de847bf847923233606283889f4935a523bb17cf2ecac638b9ee6121f6c5ebe7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_traffic_class.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4963fe99bcdd9208a58a06039a14402decfeb6db284d2b1a58167525b8fa47b9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_snmp_trap.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af9b9b5e7d310213ca1feceaa4c4a0fd31297623d480ab5961e7538251322f3f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_syslog.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c473b59bca0f5b5705dac6a41a0c27981235eb127633c60e6afd008acdc9ea3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_aaa_authorization.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9c05c41f8c33db0324341849ed0af5966eccc4f91b295c8551e33b472364648",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_system_attributes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ec36f7cbf9d83113274a3004e96a0ae4dfe0c84144ad72711dfecdeb3013a27a",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_interface.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5f6c36761cf5b694df5e3b4bb4da05ff1afb8848a643f42f5fb3a2dbe49e54d9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_anycli.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "496748f05f39b4cc2bfb59fe176e54b548e505a9abcff1f8cafbbc5082397458",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_port_rate_limit.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae2eea9daeb97bd973259b2bbc289219eb8672dc6db21e29e3bdd317a759fef1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_ip_route.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4e92437c7b64ffead88e12ee44f3d46b5e1da2c5a3711adbbb2bfdfdecb2819",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_config_bkup.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "23f516b5b9703ea712c8dc639c53ba51a7933e22202c08a5d025ff3b5cf3e886",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_dot1x.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "abb4883582dce54c00cf886dee96b95c4a4af4eda065b76f94a79683473bdbdc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_mac_authentication.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "713d42086208a72a2b170de12bb02ad5992ed7ab238e7ed91a42932dfda7d45e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_aaa_authentication.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0b672d665db0f69f9305c394f31d6fdd570f2915484185348cb8c5fb4fac74d5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_file_transfer.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "14a852d801aea4c0f308832ebb2b12ddbe6eddfac7e35a48334f22c076003fbd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_captive_portal.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3479df4041054400f1eb63b60b067102f1b7fc889ccc72eaa750b794ce40dff9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/arubaoss_acl_policy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6ddb3704a9c7b8777d2b361f7c0f51ea333567a3e8f6f57a7a1685f488f37b50",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.13.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664bfdced3ec3cac65f0da0d423011f3cf44b0c87b262d194c1210af1b0f913a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.10.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664bfdced3ec3cac65f0da0d423011f3cf44b0c87b262d194c1210af1b0f913a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.15.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664bfdced3ec3cac65f0da0d423011f3cf44b0c87b262d194c1210af1b0f913a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.14.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664bfdced3ec3cac65f0da0d423011f3cf44b0c87b262d194c1210af1b0f913a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.11.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664bfdced3ec3cac65f0da0d423011f3cf44b0c87b262d194c1210af1b0f913a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.9.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "664bfdced3ec3cac65f0da0d423011f3cf44b0c87b262d194c1210af1b0f913a",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.12.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25bf774035a36d8e8d6eb0c57d2deacbe2cff9ab2efa9f3a588a211a1c0a8904",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "354d46b8f13b37e3b60677caa14c55cf4ffbdc37354379e8070629876f37e914",
+   "format": 1
+  },
+  {
+   "name": "requirements.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f47a7cad48fc25fcd58e448c8566081a1f5c06ada22db0dd6a1e4410e07bfd34",
+   "format": 1
+  }
+ ],
+ "format": 1
+}
