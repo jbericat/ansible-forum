@@ -1,0 +1,259 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 1,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 0,
+            "__percent_complete": 100,
+            "__play_name": "Update Kernel and reboot RHEL 8.6",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 1,
+            "__unreachable": 0,
+            "name": "Update Kernel and reboot RHEL 8.6",
+            "pattern": "all",
+            "play": "Update Kernel and reboot RHEL 8.6",
+            "play_pattern": "all",
+            "play_uuid": "0242ac11-0003-5787-8fb9-000000000002",
+            "playbook": "/home/beri/MyStuff/dev/repos/ansible/ansible-forum/mogamal_3062.yml",
+            "playbook_uuid": "e2d42e95-ebdc-4ef8-871b-4e16d3b2ab9b",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "3s",
+                    "__host": "192.168.30.29",
+                    "__number": 0,
+                    "__result": "Failed",
+                    "__task": "Install new RHEL Kernel",
+                    "__task_action": "ansible.builtin.dnf",
+                    "duration": 3.261511,
+                    "end": "2023-12-30T17:29:09.690830",
+                    "event_loop": null,
+                    "host": "192.168.30.29",
+                    "ignore_errors": null,
+                    "play": "Update Kernel and reboot RHEL 8.6",
+                    "play_pattern": "all",
+                    "play_uuid": "0242ac11-0003-5787-8fb9-000000000002",
+                    "playbook": "/home/beri/MyStuff/dev/repos/ansible/ansible-forum/mogamal_3062.yml",
+                    "playbook_uuid": "e2d42e95-ebdc-4ef8-871b-4e16d3b2ab9b",
+                    "remote_addr": "192.168.30.29",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "ansible_facts": {
+                            "discovered_interpreter_python": "/usr/libexec/platform-python"
+                        },
+                        "changed": false,
+                        "failures": [],
+                        "invocation": {
+                            "module_args": {
+                                "allow_downgrade": false,
+                                "allowerasing": false,
+                                "autoremove": false,
+                                "bugfix": false,
+                                "cacheonly": false,
+                                "conf_file": null,
+                                "disable_excludes": null,
+                                "disable_gpg_check": false,
+                                "disable_plugin": [],
+                                "disablerepo": [],
+                                "download_dir": null,
+                                "download_only": false,
+                                "enable_plugin": [],
+                                "enablerepo": [
+                                    "rhel-8-for-x86_64-baseos-rpms"
+                                ],
+                                "exclude": [],
+                                "install_repoquery": true,
+                                "install_weak_deps": true,
+                                "installroot": "/",
+                                "list": null,
+                                "lock_timeout": 30,
+                                "name": [
+                                    "kernel-core.x86_64"
+                                ],
+                                "nobest": false,
+                                "releasever": null,
+                                "security": false,
+                                "skip_broken": false,
+                                "sslverify": true,
+                                "state": "absent",
+                                "update_cache": false,
+                                "update_only": false,
+                                "use_backend": "auto",
+                                "validate_certs": true
+                            }
+                        },
+                        "msg": "Depsolve Error occurred: \n Problem: The operation would result in removing the following protected packages: kernel-core",
+                        "rc": 1,
+                        "results": []
+                    },
+                    "resolved_action": "ansible.builtin.dnf",
+                    "start": "2023-12-30T17:29:06.429319",
+                    "task": "Install new RHEL Kernel",
+                    "task_action": "ansible.builtin.dnf",
+                    "task_args": "",
+                    "task_path": "/home/beri/MyStuff/dev/repos/ansible/ansible-forum/mogamal_3062.yml:8",
+                    "task_uuid": "0242ac11-0003-5787-8fb9-000000000006",
+                    "uuid": "5e3ce045-6fed-4638-878d-9205f5859f94"
+                }
+            ],
+            "uuid": "0242ac11-0003-5787-8fb9-000000000002"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "cmdline": "--private-key id_ed25519_kvm.beri.cat",
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "192.168.30.29,"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/beri/MyStuff/dev/repos/ansible/ansible-forum/mogamal_3062.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/beri/MyStuff/dev/repos/ansible/ansible-forum"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/beri/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "docker",
+                "enabled": true,
+                "image": "quay.io/jordi_bericat/ansible-ee:2.15-latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/beri/MyStuff/dev/repos/ansible/ansible-forum/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Previous cli command",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Previous cli command",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Previous cli command",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "\u001b[1;35m[WARNING]: Skipping plugin (/usr/local/lib/python3.9/site-\u001b[0m",
+        "\u001b[1;35mpackages/ansible/plugins/connection/psrp.py), cannot load: deprecated() got an\u001b[0m",
+        "\u001b[1;35munexpected keyword argument 'name'\u001b[0m",
+        "\u001b[1;35m[WARNING]: Skipping plugin (/usr/local/lib/python3.9/site-\u001b[0m",
+        "\u001b[1;35mpackages/ansible/plugins/connection/winrm.py), cannot load: deprecated() got an\u001b[0m",
+        "\u001b[1;35munexpected keyword argument 'name'\u001b[0m",
+        "",
+        "PLAY [Update Kernel and reboot RHEL 8.6] ***************************************",
+        "",
+        "TASK [Install new RHEL Kernel] *************************************************",
+        "\u001b[0;31mfatal: [192.168.30.29]: FAILED! => {\"ansible_facts\": {\"discovered_interpreter_python\": \"/usr/libexec/platform-python\"}, \"changed\": false, \"failures\": [], \"msg\": \"Depsolve Error occurred: \\n Problem: The operation would result in removing the following protected packages: kernel-core\", \"rc\": 1, \"results\": []}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31m192.168.30.29\u001b[0m              : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}
