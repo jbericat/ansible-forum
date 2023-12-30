@@ -10,9 +10,9 @@
         enablerepo:
           - rhel-8-for-x86_64-baseos-rpms
         name:
-          - kernel-tools-libs.x86_64
+          - kernel.x86_64
         # update_only: true
-        state: present
+        # # state: present
       notify: Reboot RHEL Host
 
   handlers:
