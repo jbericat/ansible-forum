@@ -11,8 +11,7 @@
           - rhel-8-for-x86_64-baseos-rpms
         name:
           - kernel.x86_64
-        update_only: true
-        state: absent
+        state: present
       notify: Reboot RHEL Host
 
   handlers:
