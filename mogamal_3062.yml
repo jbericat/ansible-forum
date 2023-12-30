@@ -12,6 +12,7 @@
         name:
           - kernel.x86_64
         update_only: true
+        state: absent
       notify: Reboot RHEL Host
 
   handlers:
