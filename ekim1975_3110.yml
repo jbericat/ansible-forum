@@ -1,0 +1,43 @@
+---
+- name: "Ansible.windows.win_hostname: does not update the Ansible environment"
+  hosts: all
+  gather_facts: true
+
+  vars:
+    comp_name: win10-vm
+  tasks:
+
+    - name: Get host IP address
+      ansible.builtin.debug:
+        var: ansible_facts.ip_addresses | first
+
+    - name: Get host IP address using interface name
+      ansible.builtin.debug:
+        var: interface[0].ipv4.address
+      vars:
+        interface: "{{ ansible_facts.interfaces | selectattr('interface_name', 'eq', 'Intel(R) 82574L Gigabit Network Connection #2') }}"
+
+#     - name: Rename host
+#       ansible.windows.win_hostname:
+#         name: "{{ comp_name }}"
+#       register: res
+
+#     - name: Get host facts before rebooting
+#       ansible.builtin.setup:
+#       register: pre_facts
+
+#     - name: Show facts for the current host BEFORE rebooting -> {{ inventory_hostname }}
+#       ansible.builtin.debug:
+#         var: pre_facts.ansible_facts.ansible_hostname
+
+#     - name: Reboot windows node
+#       ansible.windows.win_reboot:
+
+#     - name: Get host facts after rebooting
+#       ansible.builtin.setup:
+#       register: post_facts
+
+#     - name: Show updated facts for the current host AFTER rebooting -> {{ inventory_hostname }}
+#       ansible.builtin.debug:
+#         var: post_facts.ansible_facts.ansible_hostname
+# ...

@@ -1,0 +1,23 @@
+---
+- name: Help Using an .stdout as a WHEN Condition
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Asserting float sign from file lookup
+      ansible.builtin.assert:
+        that: impact_score | float < 0
+        success_msg: NEGATIVE NUMBER
+        fail_msg: NOT NEGATIVE NUMBER
+      vars:
+        impact_score: "{{ lookup('file', 'tmp/impact.txt', lstrim=true) }}"
+      register: results
+
+    - name: My Block
+      when: not results.failed
+      block:
+
+        - name: DEBUG
+          ansible.builtin.debug:
+            msg: these tasks will run only when the impact_score is negative
+...
