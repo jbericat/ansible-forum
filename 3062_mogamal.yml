@@ -1,0 +1,25 @@
+---
+- name: Update Kernel and reboot RHEL 8.6
+  hosts: all
+  gather_facts: false
+  remote_user: root
+  tasks:
+
+    - name: Install new RHEL Kernel
+      ansible.builtin.dnf:
+        enablerepo:
+          - rhel-8-for-x86_64-baseos-rpms
+        name:
+          - kernel.x86_64
+        # update_only: true
+        # # state: present
+      notify: Reboot RHEL Host
+
+  handlers:
+
+    - name: Reboot RHEL Host
+      ansible.builtin.reboot:
+        pre_reboot_delay: 10
+        msg: "System will be rebooting in 10 seconds..."
+        reboot_command: reboot
+...

@@ -1,0 +1,9 @@
+---
+- name: Playbook 1 - johntxjw 
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+  - name: IOS Task
+    ansible.builtin.command:
+      
