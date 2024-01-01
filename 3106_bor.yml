@@ -1,0 +1,17 @@
+---
+- name: Vmware_guest is not changing guest_id
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Change Guest ID
+      community.vmware.vmware_guest:
+        # uuid: "{{ vm_info.instance.hw_product_uuid }}"
+        guest_id: other5xLinux64Guest
+        hostname: esxi.bt.lan
+        username: root
+        password: VMware1!
+        validate_certs: false
+        name: Ubuntu-VM
+      delegate_to: localhost
+      delegate_facts: true

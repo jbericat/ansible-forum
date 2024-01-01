@@ -1,5 +1,0 @@
----
-- name: Role task 1
-  debug:
-    msg: "hey yo"
-...

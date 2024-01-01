@@ -1,3 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-HostUrl=https://ansible-galaxy-ng.s3.dualstack.us-east-1.amazonaws.com/artifact/35/be4b32ca9bcf94010e9546ca3f9cbb0b83487e96dd73b955eae088a316dd1a?response-content-disposition=attachment%3Bfilename%3Dinfra-ah_configuration-2.0.4.tar.gz&response-content-type=application%2Fgzip&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5DPYWLYOGHQ73CV2%2F20231109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231109T122233Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8883e90ffc9726c0d00fafcd9d4a28278dcaf881288862f74e8cf25c54b520b8
