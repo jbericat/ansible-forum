@@ -10,7 +10,7 @@
         guest_id: other5xLinux64Guest
         hostname: esxi.bt.lan
         username: root
-        password: VMware1!
+        password: "********"
         validate_certs: false
         name: Ubuntu-VM
       delegate_to: localhost

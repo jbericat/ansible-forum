@@ -10,7 +10,7 @@
         success_msg: NEGATIVE NUMBER
         fail_msg: NOT NEGATIVE NUMBER
       vars:
-        impact_score: "{{ lookup('file', 'tmp/impact.txt', lstrim=true) }}"
+        impact_score: "{{ lookup('file', 'files/3067.txt', lstrim=true) }}"
       register: results
 
     - name: My Block
