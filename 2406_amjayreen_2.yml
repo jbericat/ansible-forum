@@ -35,8 +35,8 @@
           awx.awx.workflow_launch:
             name: "[ANSIBLE-FORUM][AMJAYREEN][WJT]"
             controller_username: admin
-            controller_password: "?=>}4+@h!DrG:^Bi"
-            controller_host: awx.dev.cgr-lab.lan
+            controller_password: "***********"
+            controller_host: awx.beri.lab
             validate_certs: false
             wait: false
 
