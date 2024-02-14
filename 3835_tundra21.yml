@@ -1,0 +1,50 @@
+- name: Update F5 Users
+  hosts: localhost
+  # connection: local
+  gather_facts: false
+
+  vars:
+    provider:
+      no_f5_teem: true
+      password: CGR123ABANCA
+      server: f5bigip01.gns3.beri.lab
+      user: admin
+      validate_certs: false
+      server_port: 443
+    f5user:
+      list:
+        - username: lois2
+          state: present
+          shell: bash
+          role: admin
+
+  tasks:
+    # - name: "Read user file"
+    #   community.general.read_csv:
+    #     path: f5userlist.csv
+    #     delimiter: ","
+    #     dialect: excel
+    #   register: f5user
+
+    - name: Disable remote access to all Users
+      f5networks.f5_modules.bigip_remote_user:
+        provider: "{{ provider }}"
+        default_role: no-access
+        console_access: false
+
+    - name: Update F5 User
+      f5networks.f5_modules.bigip_user:
+        name: "{{ user.username }}"
+        partition_access:
+          - all:"{{ user.role }}"
+        shell: "{{ user.shell }}"
+        state: "{{ user.state }}"
+        provider: "{{ provider }}"
+      loop: "{{ f5user.list }}"
+      loop_control:
+        loop_var: user
+
+    # - name: Save the running configuration of the BIG-IP
+    #   f5networks.f5_modules.bigip_config:
+    #     save: true
+    #     provider: "{{ provider }}"

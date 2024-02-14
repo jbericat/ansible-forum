@@ -3,7 +3,7 @@
 ansible-navigator:
   ansible:
     config:
-      help: False
+      help: false
       path: ansible.cfg
 #     cmdline: "--forks 15"
 #     doc:
