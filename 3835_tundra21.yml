@@ -6,7 +6,7 @@
   vars:
     provider:
       no_f5_teem: true
-      password: CGR123ABANCA
+      password: OLD123PASSWORD
       server: f5bigip01.gns3.beri.lab
       user: admin
       validate_certs: false
